@@ -4,6 +4,7 @@ A Streamlit app that verifies insurance policy details against their PDF documen
 Upload an Excel file with policy numbers, dates, and PDF links — the app downloads
 each PDF, checks the policy number and start/end dates against the document text,
 and returns a color-coded flagged Excel file you can download. 
+
 Deployed Link:
 https://verifypolicies.streamlit.app/
 
