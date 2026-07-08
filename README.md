@@ -3,7 +3,9 @@
 A Streamlit app that verifies insurance policy details against their PDF documents.
 Upload an Excel file with policy numbers, dates, and PDF links — the app downloads
 each PDF, checks the policy number and start/end dates against the document text,
-and returns a color-coded flagged Excel file you can download.
+and returns a color-coded flagged Excel file you can download. 
+Deployed Link:
+https://verifypolicies.streamlit.app/
 
 ## What it checks
 
@@ -42,15 +44,6 @@ The downloaded file (`flagged.xlsx`) contains all your original columns plus:
   (timeout, expired link, encrypted PDF, scanned PDF with no text layer, etc.)
 
 Rows are color-coded: green = pass, red = flagged, yellow = download error.
-
-## Running locally
-
-```bash
-pip install -r requirements.txt
-streamlit run streamlit_app.py
-```
-
-Then open the local URL Streamlit prints (usually `http://localhost:8501`).
 
 ## Deploying on Streamlit Community Cloud
 
