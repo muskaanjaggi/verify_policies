@@ -71,12 +71,3 @@ need OCR, you can delete `packages.txt` and remove `pytesseract` and
 - **OCR is a fallback, not primary extraction.** It only kicks in on pages
   where fewer than ~20 characters of text are found, to catch scanned PDFs
   without slowing down normal text-based PDFs.
-
-## Files in this project
-
-| File               | Purpose                                              |
-|--------------------|-------------------------------------------------------|
-| `streamlit_app.py` | The web app (upload, verify, download)                |
-| `requirements.txt` | Python dependencies                                    |
-| `packages.txt`     | System packages for OCR (Streamlit Cloud only)         |
-| `xiaomi_verify.py` | Standalone CLI script version of the same verification logic, for local batch runs without the web UI |
